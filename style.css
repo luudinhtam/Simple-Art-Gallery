@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #e9e4db;
+    text-align: center;
+    padding: 40px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    font-size: 16px;
+}
+
+#preview-section {
+    width: 75%;
+    margin: 0 auto 60px auto;
+}
+
+#image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 15px solid #f8f8f8;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #555;
+    transition: opacity 0.4s ease;
+}
+
+#imageTitle {
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 0 8px;
+    object-fit: cover;
+    border: 8px solid white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease;
+}
+
+.nav:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+/* ===== Active Thumbnail ===== */
+.gallery img.active {
+    border: 8px solid #fff;
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
