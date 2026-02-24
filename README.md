@@ -1,65 +1,42 @@
 # Simple Art Gallery
 
-A very simple web project built using **HTML, CSS, and JavaScript**. It This project demonstrates a basic webpage, styling, and interactivity.
-
-## Description
-
-This project is a beginner-friendly webpage designed to practice fundamental front-end development skills. It includes:
-
-- Structured content using **HTML**.
-
-- Styling with **CSS**.
-
-- Basic interactivity using **JavaScript**.
-
-The goal of this project is to understand how these three core technologies work together to create a functional webpage.
+A simple and elegant web-based art gallery built with **HTML, CSS, and JavaScript.**
+This project allows users to preview famous paintings with smooth transitions and basic navigation controls.
 
 ## Features
 
-- Clean and simple UI.
+- Image preview section with smooth fade transition
 
-- Interactive elements powered by JavaScript.
+- Hover to display selected painting
 
-- Lightweight and easy to understand code.
+- Keyboard accessibility (Enter / Space to select)
+
+- Previous / Next navigation buttons
+
+- Active thumbnail highlighting
+
+- Dynamic image title display
+
+- Basic accessibility support (ARIA attributes)
 
 ## Technologies Used
 
-- **HTML5** – Structure of the webpage.
+- **HTML5**
 
-- **CSS3** – Styling and layout.
+- **CSS3** (Flexbox, transitions, shadows)
 
-- **JavaScript** – Interactivity and dynamic behavior.
-
-## How to Run the Project
-
-1. Download or clone this repository.
-
-2. Open the project folder.
-
-3. Double-click index.html to open it in your browser.
-
-Or, if you use VS Code:
-
-1. Install the Live Server extension.
-
-2. Right-click index.html → Select Open with Live Server.
+- **JavaScript** (DOM manipulation, event handling)
 
 ## Learning Objectives
 
-- Understand the relationship between HTML, CSS, and JavaScript.
+- Manipulate the DOM with JavaScript
 
-- Practice DOM manipulation.
+- Handle user events (hover, click, keyboard)
 
-- Improve front-end coding structure.
+- Create smooth transitions with CSS
 
-- Build a foundation for more advanced projects.
+- Improve basic accessibility
 
-## Future Improvements (Optional)
+- Manage simple state in JavaScript
 
-- Add more interactive features.
-
-- Improve responsive design.
-
-- Optimize performance.
-
-- Refactor code structure.
+![Home Page](home.png)
