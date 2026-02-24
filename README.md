@@ -12,7 +12,7 @@ This project is a beginner-friendly webpage designed to practice fundamental fro
 
 - Basic interactivity using **JavaScript**.
 
-The goal of this project is to understand how these three core technologies work together to create a functional webpage.
+The goal of this project is to understand how these three technologies work together to create a simple webpage.
 
 ## Features
 
